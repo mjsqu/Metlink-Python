@@ -152,7 +152,9 @@ class Metlink():
                 'vehicle_id': entity['vehicle']['vehicle']['id'],
                 'bearing': entity['vehicle']['position']['bearing'],
                 'latitude': entity['vehicle']['position']['latitude'],
-                'longitude': entity['vehicle']['position']['longitude']
+                'longitude': entity['vehicle']['position']['longitude'],
+                'route_id':  entity['vehicle']['trip']['route_id'],
+                'direction_id': entity['vehicle']['trip']['direction_id'],
             }
             vehicle_positions.append(vehicle_position)
         return vehicle_positions
